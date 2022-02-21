@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu>ul>li{
+    display:inline-block;
+    position:relative;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    color:white;
+    padding:0 10px;
+    line-height:40px;
+}
+.menu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    background-color:orangered;
+    text-align:center;
+}
+.menu>ul>li>a:hover{
+    color: yellow;
+}
+.menu ul ul{
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius:3px;
+    width:200px;
+    background-color:white;
+    box-shadow:0 0 1px gray;
+
+}
+.menu ul ul a{
+    display: block;
+    line-height:30 px;
+    color:orangered;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    padding:0 10px;
+}
+.menu>ul>li:hover>ul{
+    display: block;
+}
+.menu ul ul a:hover{
+    background-color:orangered;
+    color:white;
+}
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="ass2.html">Trang chủ</a></li>
+            <li><a href="gt.html">Giới thiệu</a></li>
+            <li><a href="sp.html">Sản phẩm</a>
+                <ul>
+                    <li><a href="ad.html">ADIDAS</a></li>
+                    <li><a href="enk.html">NIKE</a></li>
+                    <li><a href="cv.html">CONVESER</a></li>
+                    <li><a href="nbl.html">NEWBALANCE</a></li>
+                
+                </ul>
+            
+            </li>
+            <li><a href="lh.html">Liên Hệ</a>
+                <ul>
+                    <li><a href="mb.html">Mobile</a></li>
+                    <li><a href="em.html">Email</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <form name="form">
+            <p><label class="textstyle" for="">Họ và tên: </label></p>
+            <p><input class="inwidth" type="text"></p>
+            <p>
+                <lable class="textstyle" for="">Giới tính: </lable>
+                <input type="radio" name="" id="">Nam
+                <input type="radio" name="" id="">Nữ
+            </p>
+            <p><label class="textstyle" for="">Hình ảnh: </label></p>
+            <p><input type="file"></p>
+            <p><label class="textstyle" for="">Quốc tịch: </label></p>
+            <p>
+                <select class="inwidth" name="" id="">
+                    <option value="">United States</option>
+                    <option value="">Việt Nam</option>
+                    <option value="">Hàn Quốc</option>
+                    <option value="">Chaina</option>
+                </select>
+            </p>
+            <p><label class="textstyle" for="">Sở thích</label></p>
+            <p>
+                <input type="checkbox">
+                <label class="textstyle" for="">THỂ THAO</label> 
+                <input type="checkbox">
+                <label class="textstyle" for="">DU LỊCH</label> 
+                <input type="checkbox">
+                <label class="textstyle" for="">ÂM NHẠC</label> 
+                <input type="checkbox">
+                <label class="textstyle" for="">ẨM THỰC</label> 
+            </p>
+            <p><label class="textstyle" for="">GHI CHÚ: </label></p>
+            <p>
+                <textarea class="inwidth" name="" id="" cols="50" rows="10"></textarea>
+            </p>
+            <hr>
+            <p>
+                <input type="button" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
